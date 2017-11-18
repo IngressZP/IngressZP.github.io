@@ -1,5 +1,1 @@
 node_modules/
-*.sublime-project
-*.sublime-workspace
-gulpfile.js
-package.json

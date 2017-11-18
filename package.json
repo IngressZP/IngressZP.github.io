@@ -1,0 +1,24 @@
+{
+  "name": "ingresszp.github.io",
+  "version": "1.0.0",
+  "description": "website for ingress mission day zaporizhzhia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gulp webserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IngressZP/IngressZP.github.io.git"
+  },
+  "author": "KristobalJunta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IngressZP/IngressZP.github.io/issues"
+  },
+  "homepage": "https://github.com/IngressZP/IngressZP.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
