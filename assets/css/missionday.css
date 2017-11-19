@@ -205,6 +205,11 @@ footer {
 
 footer a {
 	color: #797979;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
 }
 
 .floatright {
