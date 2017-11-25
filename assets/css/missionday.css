@@ -563,3 +563,8 @@ footer a:hover {
 :-ms-input-placeholder {
 	opacity: 1 !important;
 }
+
+.lang-dropdown .dropdown-toggle {
+    font-weight: bold;
+    border: none;
+}
