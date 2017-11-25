@@ -1,4 +1,0 @@
-User-Agent: *
-Disallow: en.html
-Disallow: psd
-Disallow: assets
