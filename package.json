@@ -19,6 +19,7 @@
   "homepage": "https://github.com/IngressZP/IngressZP.github.io#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "stylelint-config-standard": "^17.0.0"
   }
 }
