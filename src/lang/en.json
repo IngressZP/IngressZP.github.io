@@ -1,0 +1,81 @@
+{
+    "lang": {
+        "name": "English (English)",
+        "code": "en",
+        "all": [
+            {
+                "name": "Ukrainian (Українська)",
+                "code": "uk"
+            },
+            {
+                "name": "Russian (Русский)",
+                "code": "ru"
+            },
+            {
+                "name": "English (English)",
+                "code": "en"
+            }
+        ]
+    },
+
+    "menu": {
+
+    },
+
+    "banner": {
+        "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
+        "text": "Agents, we want to discover Zaporizhzhia on Saturday 26 May 2018. In collaboration with the City of Zaporizhzhia we will provide you <strong><span>24 high quality </span></strong>missions to explore the city on foot together. Sign up to receive more information soon."
+    },
+
+    "intro": {
+        "header": {
+            "leadText": "Mission Day <span>Zaporizhzhia</span>",
+            "subText": "Welcome to our Community Website <br>for the Mission Day Zaporizhzhia!"
+        },
+        "text": [
+            "Mission Day brings together Agents from both factions to explore cities around the world through the lens of Ingress with unique and local adventures on foot.",
+            "Agents, we want to discover Zaporizhzhia on Saturday 26 May 2018. In collaboration with the City of Zaporizhzhia we will provide you high quality missions to explore the city on foot together."
+        ]
+    },
+
+    "timetable": {
+        "header": "Timetable<span> MD: Zaporizhzhia</span>",
+        "subHeader": "Our Timetable is not yet final. We will keep you updated!",
+        "columnHeaders": {
+            "when": "When?",
+            "what": "What?"
+        },
+        "columns": [
+            {
+                "when": "10:00 - 12:00",
+                "what": {
+                    "leadText": "Registration",
+                    "subText": "\"Raduha\" fountain",
+                    "link": "https://www.google.com.ua/maps/place/Kaskad+Fontaniv+%22Raduha%22/@47.8356189,35.1147433,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc60cef5ff4d29:0x2e987ce8f98fc192!8m2!3d47.8356189!4d35.116932"
+                }
+            },
+            {
+                "when": "11:00 - 11:15",
+                "what": {
+                    "leadText": "Group photo",
+                    "subText": "\"Raduha\" fountain",
+                    "link": "https://www.google.com.ua/maps/place/Kaskad+Fontaniv+%22Raduha%22/@47.8356189,35.1147433,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc60cef5ff4d29:0x2e987ce8f98fc192!8m2!3d47.8356189!4d35.116932"
+                }
+            },
+            {
+                "when": "16:00 - 20:00",
+                "what": {
+                    "leadText": "Scanner check",
+                    "subText": "Show us your Missions @ Zaporizka square",
+                    "link": "https://www.google.com.ua/maps/place/Zaporizka+square,+Zaporizhia,+Zaporiz'ka+oblast/@47.8632474,35.0940659,19z/data=!4m13!1m7!3m6!1s0x40dc66c7c794bec5:0xb9525f3b94b474fc!2sZaporizka+Square,+Zaporizhzhia,+Zaporiz'ka+oblast!3b1!8m2!3d47.8633633!4d35.0939551!3m4!1s0x40dc66c7c783a38b:0x64264f72453c87ae!8m2!3d47.863439!4d35.0943486"
+                }
+            }
+        ],
+        "location": "Location"
+    },
+
+    "signup": {
+        "channel": "Official Telegram channel",
+        "group": "Telegram chat for questions"
+    }
+}

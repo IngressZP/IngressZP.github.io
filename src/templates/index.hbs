@@ -1,0 +1,300 @@
+<header class="header-blue">
+    <div id="main-menu" class="sticker" style="opacity: 1;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-2 ">
+                    <div class="logo">
+                        <a href="/"><img src="assets/img/md-logo.png" class="mdlogo" alt="Missionday"></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-10 text-right">
+                    {{!--
+                    <!-- hidden on mobile -->
+                    <div class="main-menu float-right">
+                        <nav>
+                            <ul>
+                                <li class="active"><a href="#intro">Home</a></li>
+                                <li class=""><a href="#missions">Mission Map</a></li>
+                               <li><a href="#timetable">Timetable</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    --}}
+                    <div class="dropdown lang-dropdown pull-right">
+                        <button class="btn btn-default button-blue dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span>{{lang.name}}</span> <i class="glyphicon glyphicon-globe"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            {{#each lang.all}}
+                                <li><a href="#" data-lang="{{code}}">{{name}}</a></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="banner-area banner-skyline banner-horizontal" id="banner" style="background:url(assets/img/bg_header.jpg) center center no-repeat;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-lg-7">
+                <div class="banner-text">
+                    <div class="banner-table-cell">
+                        <h1>
+                            {{{banner.header}}}
+                        </h1>
+                        <p>
+                            {{{banner.text}}}
+                        </p>
+                        <div class="banner-buttons">
+                            {{!!--
+                            <!-- timetable and signup only mobile visible -->
+                            <a href="#missions" class="button-default button-md">Our Missions</a>
+                            <a href="#timetable" class="button-default button-md visibile-xs">TimeTable</a>
+                            <a href="#missions" class="button-default button-md niantic visibile-xs">Niantic Signup</a>
+                            --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!--
+            <div class="hidden-xs col-sm-4 col-lg-5">
+                <div class="banner-product-image">
+                    <div class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="0s" style="visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: bounceInUp;">
+                        <img src="assets/img/banner-mobile.png" alt="Missionday Zaporizhzhia" class="floatright">
+                    </div>
+                </div>
+            </div>
+            --}}
+        </div>
+    </div>
+</div>
+
+{{!--
+Mobile Map - THIS WILL ONLY BE SHOWN ON MOBILE
+
+You  can add a link to your google Map, take a look at the berlin missionday map
+https://www.google.com/maps/d/viewer?mid=11SksJmgINlqaGuzc1eLbRAGRHko
+--}}
+{{!--
+<section id="mobile-map" class="visible-xs" style="margin:-20px 0 40px 0; position:relative; z-index:100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center" >
+                 <a href="map"><img src="assets/img/missionmap.jpg" alt="Map" class="img-responsive"></a>
+                  <a class="button-default button-md" href="https://www.google.com/maps/d/viewer?mid=11SksJmgINlqaGuzc1eLbRAGRHko">Open Mobile Map</a>
+            </div>
+        </div>
+    </div>
+</section>
+--}}
+
+{{!-- Introduction --}}
+<section id="intro">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-title text-center title-blue">
+                <h1>
+                    {{{intro.header.leadText}}}
+                </h1>
+                <p>
+                    {{{intro.header.subText}}}
+                </p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-sm-5">
+			<div class="about-image">
+				<img  src="assets/img/promo-city.jpg" alt="Missionday Zaporizhzhia">
+			</div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-lg-6">
+            {{#each intro.text}}
+                <p>
+                    {{this}}
+                </p>
+            {{/each}}
+        </div>
+    </div>
+</div>
+</section>
+{{!-- // Introduction --}}
+
+{{!--
+<!-- DYNAMIC MISSIONDAY MAP - will be populated with an javascript -->
+<section id="map" class="hidden-xs">
+    <div class="map"></div>
+</section>
+--}}
+
+{{!--
+<!-- // map -->
+<section id="missions">
+    <div class="container clearfix">
+        <img src="assets/img/md-blank.svg" class="mdlogo">
+        <!-- col mission badge images -->
+        <div class="row">
+        <div class="col-sm-6 col-md-5" style="text-align:center">
+            <!--
+             Berlin had 24 Missions - this is also niantics limit for missiondays atm.
+
+             Mission Badge Hover Script:
+                - each mission needs its own ID (see: id='mID-XX')
+                - these ID's need to matches the class at row: 242  <ul class="mission-names"
+                - on mission-badge hover -> highlight matching Missioname
+                - super simple....
+
+                PSD FOR BADGES CAN BE FOUND ON GITHUB
+
+                todo: add psd to github...
+             -->
+            <img id="mID-01" class="mission-badge" src="assets/mission-badge/01.png" alt="Name of Mission" />
+            <img id="mID-02" class="mission-badge" src="assets/mission-badge/02.png" alt="Name of Mission" />
+            <img id="mID-03" class="mission-badge" src="assets/mission-badge/03.png" alt="Name of Mission" />
+            <img id="mID-04" class="mission-badge" src="assets/mission-badge/04.png" alt="Name of Mission" />
+            <img id="mID-05" class="mission-badge" src="assets/mission-badge/05.png" alt="Name of Mission" />
+            <img id="mID-06" class="mission-badge" src="assets/mission-badge/06.png" alt="Name of Mission" />
+            <img id="mID-07" class="mission-badge" src="assets/mission-badge/07.png" alt="Name of Mission" />
+            <img id="mID-08" class="mission-badge" src="assets/mission-badge/08.png" alt="Name of Mission" />
+            <img id="mID-09" class="mission-badge" src="assets/mission-badge/09.png" alt="Name of Mission" />
+            <img id="mID-10" class="mission-badge" src="assets/mission-badge/10.png" alt="Name of Mission" />
+            <img id="mID-11" class="mission-badge" src="assets/mission-badge/11.png" alt="Name of Mission" />
+            <img id="mID-12" class="mission-badge" src="assets/mission-badge/12.png" alt="Name of Mission" />
+            <img id="mID-13" class="mission-badge" src="assets/mission-badge/13.png" alt="Name of Mission" />
+            <img id="mID-14" class="mission-badge" src="assets/mission-badge/14.png" alt="Name of Mission" />
+            <img id="mID-15" class="mission-badge" src="assets/mission-badge/15.png" alt="Name of Mission" />
+            <img id="mID-16" class="mission-badge" src="assets/mission-badge/16.png" alt="Name of Mission" />
+            <img id="mID-17" class="mission-badge" src="assets/mission-badge/17.png" alt="Name of Mission" />
+            <img id="mID-18" class="mission-badge" src="assets/mission-badge/18.png" alt="Name of Mission" />
+            <img id="mID-19" class="mission-badge" src="assets/mission-badge/19.png" alt="Name of Mission" />
+            <img id="mID-20" class="mission-badge" src="assets/mission-badge/20.png" alt="Name of Mission" />
+            <img id="mID-21" class="mission-badge" src="assets/mission-badge/21.png" alt="Name of Mission" />
+            <img id="mID-22" class="mission-badge" src="assets/mission-badge/22.png" alt="Name of Mission" />
+            <img id="mID-23" class="mission-badge" src="assets/mission-badge/23.png" alt="Name of Mission" />
+            <img id="mID-24" class="mission-badge" src="assets/mission-badge/24.png" alt="Name of Mission" />
+
+            <!-- add Link to your Google Map here - WE LOVE GOOD UX  -->
+            <a class="wow bounceInUp button-default button-md" style="margin:1em auto 2em auto" data-wow-duration="2s"  href="map">Open Mobile Map</a>
+            <!-- // MAP -->
+            <br>
+        </div>
+        <!-- end col mission badge images -->
+
+        <!-- col for mission name list -->
+        <div class="col-sm-6 col-md-7">
+            <!-- yeah we like to brag.... -->
+            <div class="section-title no-mb"> <h1>CREATED BY REAL <span>AGENTS</span></h1> </div>
+                <p>
+                    24 <span class="highlight">Missions</span> across Zaporizhzhia are waiting to be discovered. <br>
+                    All Missions are created and tested by local Agents to ensure a great Mission Day experience. Also, they will be barrier free and playable for handicapped Agents.
+                </p>
+            <!-- MISSION NAME LIST  -->
+             <ul class="mission-names" id="mName">
+                <!-- MISSION SHOULD BE THE EXCACT NAME AS IT APPEARS IN THE SCANNER!! -->
+                <li class="mID-01">Mission Name 01</li>
+                <li class="mID-02">Mission Name 02</li>
+                <li class="mID-03">Mission Name 03</li>
+                <li class="mID-04">Mission Name 04</li>
+                <li class="mID-05">Mission Name 05</li>
+                <li class="mID-06">Mission Name 06</li>
+                <li class="mID-07">Mission Name 07</li>
+                <li class="mID-08">Mission Name 08</li>
+                <li class="mID-09">Mission Name 09</li>
+                <li class="mID-10">Mission Name 10</li>
+                <li class="mID-11">Mission Name 11</li>
+                <li class="mID-12">Mission Name 12</li>
+                <li class="mID-13">Mission Name 13</li>
+                <li class="mID-14">Mission Name 14</li>
+                <li class="mID-15">Mission Name 15</li>
+                <li class="mID-16">Mission Name 16</li>
+                <li class="mID-17">Mission Name 17</li>
+                <li class="mID-18">Mission Name 18</li>
+                <li class="mID-19">Mission Name 19</li>
+                <li class="mID-20">Mission Name 20</li>
+                <li class="mID-21">Mission Name 21</li>
+                <li class="mID-22">Mission Name 22</li>
+                <li class="mID-23">Mission Name 23</li>
+             </ul>
+        </div>
+        </div>
+    </div>
+</section>
+--}}
+
+{{!-- TIME TABLE --}}
+<section id="timetable">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="section-title text-center title-blue">
+                    <h1>
+                        {{{timetable.header}}}
+                    </h1>
+                    <p class="big text-center">
+                        {{timetable.subHeader}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <table class="table timetable text-center">
+                    <thead class="text-center">
+                        <th>
+                            {{timetable.columnHeaders.when}}
+                        </th>
+                        <th>
+                            {{timetable.columnHeaders.what}}
+                        </th>
+                    </thead>
+                    <tbody>
+                        {{#each timetable.columns}}
+                            <tr>
+                                <td>
+                                    {{when}}
+                                </td>
+                                <td>
+                                    <strong>{{what.leadText}}</strong><br>
+                                    {{what.subText}} <br>
+                                    <a class="locationLink"
+                                        href="{{what.link}}"
+                                        target="_blank" rel="noreferrer nofollow">
+                                        [{{../timetable.location}}]
+                                    </a>
+                                </td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="signup" style="background:url(assets/img/bg_footer.jpg) center  no-repeat;">
+       <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="signup-box wow fadeInUp">
+                        <img src="assets/img/md-blank.svg" class="mdlogo">
+
+                        {{#each signup.links}}
+                            <a href="{{url}}"
+                                target="_blank" rel="noreferrer nofollow"
+                                class="btn2">
+                                {{text}}
+                            </a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+       </div>
+</section>
+
+<footer >
+    <small>copyright 2017 by missionday.zp.ua | a Zaporizhzhia ingress cross faction project | this is not the official niantic page | created with the help of garytube's <a href="https://github.com/garytube/missionday" target="_blank" rel="noreferrer nofollow">Berlin Mission Day template</a></small>
+</footer>
