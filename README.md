@@ -1,32 +1,6 @@
-![Promo](https://missionday.berlin/md-promo.jpg)
-# Missionday Landingpage #
-a simple Missionday Landingpage based on www.missionday.berlin
+![Promo](http://missionday.zp.ua/assets/img/bg_header.jpg)
+# Ingress Mission Day Zaporizhzhia Landing page #
+A Missionday landing page for Mission Day Zaporizhzhia. Based on [missionday.berlin](https://github.com/garytube/missionday)
 
-Documentation inside index.html
-
-### Preview ###
-https://garytube.github.io/missionday/
-
-### Text Placeholders ###
-use your favourite text editor and simply **find & replace** them all at once...
-
-+ [[##CITY NAME##]] > Name of your City
-+ [[##DATE##]] > Date 
-+ [[##DAY##]] > Day in Words "Saturday"
-+ [[##AMOUNT##]] > Amount of Missions
-+ [##COMMUNITY##]] > Link to community http://....
-+ [[##URL##]] > URL to this website http://missionday...
-
-
-### Google Maps ####
-add your api key on row 366
-
-** How to get a API Key**
-https://developers.google.com/maps/documentation/javascript/get-api-key?hl=de
-
-
-### Grahpics ###
-
-layered .psd (photoshop) inside  /psd
-
-SVG's inside assets/img/  -> svg's are awesome
+### Live Site ###
+http://missionday.zp.ua
