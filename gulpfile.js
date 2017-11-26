@@ -5,6 +5,9 @@ var rename = require('gulp-rename');
 var merge = require('merge-stream');
 var fs = require('fs');
 var watch = require('gulp-watch');
+var minify = require('gulp-minify');
+var cleanCss = require('gulp-clean-css');
+var concat = require('gulp-concat');
 
 gulp.task('webserver', function() {
     gulp.src('.')
@@ -14,7 +17,21 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('build-templates', function () {
+gulp.task('build:css', function () {
+    gulp.src('assets/css/*.css')
+        .pipe(cleanCss({compatibility: 'ie8'}))
+        .pipe(concat('main.min.css'))
+        .pipe(gulp.dest('static/css'));
+});
+
+gulp.task('build:js', function () {
+    gulp.src('assets/js/*.js')
+        .pipe(minify())
+        .pipe(concat('main.min.js'))
+        .pipe(gulp.dest('static/js'));
+});
+
+gulp.task('build:templates', function () {
     var templateData = {
         en: JSON.parse(fs.readFileSync('./src/lang/en.json')),
         ru: JSON.parse(fs.readFileSync('./src/lang/ru.json')),
@@ -39,9 +56,9 @@ gulp.task('build-templates', function () {
     return merge(en, ru, uk);
 });
 
-gulp.task('build', ['build-templates']);
+gulp.task('build', ['build:templates', 'build:js', 'build:css']);
 gulp.task('watch', function () {
-    watch('src/**/*', function () {
+    watch(['src/**/*', 'assets/js/*', 'assets/css/*'], function () {
         gulp.run('build');
     });
 });

@@ -21,7 +21,10 @@
   "homepage": "https://github.com/IngressZP/IngressZP.github.io#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
     "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^2.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-watch": "^4.3.11",
     "gulp-webserver": "^0.9.1",
