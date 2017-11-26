@@ -75,7 +75,27 @@
     },
 
     "signup": {
-        "channel": "Official Telegram channel",
-        "group": "Telegram chat for questions"
+        "links": [
+            {
+                "text": "Official Telegram channel",
+                "url": "https://t.me/missiondayzp"
+            },
+            {
+                "text": "Telegram Q&A chat questions",
+                "url": "https://t.me/missiondayzpchat"
+            },
+            {
+                "text": "Facebook",
+                "url": "https://www.facebook.com/events/166075047320559/"
+            },
+            {
+                "text": "Google+",
+                "url": "https://plus.google.com/communities/111204827421100727782"
+            },
+            {
+                "text": "VKontakte",
+                "url": "https://vk.com/missiondayzp"
+            }
+        ]
     }
 }

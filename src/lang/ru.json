@@ -75,7 +75,27 @@
     },
 
     "signup": {
-        "channel": "Официальный канал в Telegram",
-        "group": "Чат для вопросов в Telegram"
+        "links": [
+            {
+                "text": "Официальный канал в Telegram",
+                "url": "https://t.me/missiondayzp"
+            },
+            {
+                "text": "Чат для вопросов в Telegram",
+                "url": "https://t.me/missiondayzpchat"
+            },
+            {
+                "text": "Событие в Facebook",
+                "url": "https://www.facebook.com/events/166075047320559/"
+            },
+            {
+                "text": "Группа в Google+",
+                "url": "https://plus.google.com/communities/111204827421100727782"
+            },
+            {
+                "text": "Группа ВК",
+                "url": "https://vk.com/missiondayzp"
+            }
+        ]
     }
 }
