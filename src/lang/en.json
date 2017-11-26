@@ -40,7 +40,7 @@
 
     "timetable": {
         "header": "Timetable<span> MD: Zaporizhzhia</span>",
-        "subHeader": "Our Timetable is not yet final. We will keep you updated!",
+        "subHeader": "Our Timetable is not final yet. We will keep you updated!",
         "columnHeaders": {
             "when": "When?",
             "what": "What?"
@@ -50,7 +50,7 @@
                 "when": "10:00 - 12:00",
                 "what": {
                     "leadText": "Registration",
-                    "subText": "\"Raduha\" fountain",
+                    "subText": "Kaskad Fontaniv \"Raduha\"",
                     "link": "https://www.google.com.ua/maps/place/Kaskad+Fontaniv+%22Raduha%22/@47.8356189,35.1147433,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc60cef5ff4d29:0x2e987ce8f98fc192!8m2!3d47.8356189!4d35.116932"
                 }
             },
@@ -58,7 +58,7 @@
                 "when": "11:00 - 11:15",
                 "what": {
                     "leadText": "Group photo",
-                    "subText": "\"Raduha\" fountain",
+                    "subText": "Kaskad Fontaniv \"Raduha\"",
                     "link": "https://www.google.com.ua/maps/place/Kaskad+Fontaniv+%22Raduha%22/@47.8356189,35.1147433,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc60cef5ff4d29:0x2e987ce8f98fc192!8m2!3d47.8356189!4d35.116932"
                 }
             },
