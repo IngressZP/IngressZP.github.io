@@ -374,10 +374,10 @@ footer a:hover {
 	margin-right: 26px;
 }
 
-.banner-buttons a.button-default:hover {
+/* .banner-buttons a.button-default:hover {
 	background-color: #e86e2d !important;
 	color: #fff !important;
-}
+} */
 
 .about-area {
 	padding-top: 114px;
@@ -567,4 +567,15 @@ footer a:hover {
 .lang-dropdown .dropdown-toggle {
     font-weight: bold;
     border: none;
+}
+
+.niantic {
+	border: 1px solid #e86e2d;
+	color: #ffffff !important;
+	background: #e86e2d !important;
+}
+
+.niantic:hover {
+	background: transparent !important;
+	color: #fff !important;
 }

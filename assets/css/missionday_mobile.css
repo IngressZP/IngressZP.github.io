@@ -1,6 +1,3 @@
-
-.niantic {border: 1px solid #e86e2d; color: #ffffff !important; background: transparent !important; }
-
 @media (min-width:1400px) and (max-width:1920px) {
 	.container { width: 1200px }
 	.about-text { margin-right: 72px; margin-top: 75px }
