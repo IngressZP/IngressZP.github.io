@@ -7,8 +7,8 @@
 
 <?php
 
-require("static/header.html");
-require("static/{$lang}.html");
-require("static/footer.html");
+require(__DIR__ . "/static/header.html");
+require(__DIR__ . "/static/{$lang}.html");
+require(__DIR__ . "/static/footer.html");
 
 ?>
