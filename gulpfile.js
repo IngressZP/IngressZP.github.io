@@ -1,13 +1,13 @@
-var gulp = require('gulp');
-var webserver = require('gulp-webserver');
-var handlebars = require('gulp-compile-handlebars');
-var rename = require('gulp-rename');
-var merge = require('merge-stream');
-var fs = require('fs');
-var watch = require('gulp-watch');
-var minify = require('gulp-minify');
-var cleanCss = require('gulp-clean-css');
-var concat = require('gulp-concat');
+const gulp = require('gulp');
+const webserver = require('gulp-webserver');
+const handlebars = require('gulp-compile-handlebars');
+const rename = require('gulp-rename');
+const merge = require('merge-stream');
+const fs = require('fs');
+const watch = require('gulp-watch');
+const minify = require('gulp-minify');
+const cleanCss = require('gulp-clean-css');
+const concat = require('gulp-concat');
 
 gulp.task('webserver', function() {
     gulp.src('.')
@@ -32,23 +32,23 @@ gulp.task('build:js', function () {
 });
 
 gulp.task('build:templates', function () {
-    var templateData = {
+    let templateData = {
         en: JSON.parse(fs.readFileSync('./src/lang/en.json')),
         ru: JSON.parse(fs.readFileSync('./src/lang/ru.json')),
         uk: JSON.parse(fs.readFileSync('./src/lang/uk.json'))
     };
 
-    var en = gulp.src('src/templates/index.hbs')
+    let en = gulp.src('./src/templates/index.hbs')
         .pipe(handlebars(templateData.en))
         .pipe(rename('en.html'))
         .pipe(gulp.dest('static'));
 
-    var ru = gulp.src('src/templates/index.hbs')
+    let ru = gulp.src('src/templates/index.hbs')
         .pipe(handlebars(templateData.ru))
         .pipe(rename('ru.html'))
         .pipe(gulp.dest('static'));
 
-    var uk = gulp.src('src/templates/index.hbs')
+    let uk = gulp.src('src/templates/index.hbs')
         .pipe(handlebars(templateData.uk))
         .pipe(rename('uk.html'))
         .pipe(gulp.dest('static'));
