@@ -24,7 +24,7 @@
 
     "banner": {
         "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
-        "text": "Агенты, мы приглашаем вас в Запорожье в субботу, 26 мая 2018. Мы выбрали <span><strong>24</strong></span> миссии, которые позволят вам исследовать наш город вместе.",
+        "text": "Агенты, мы приглашаем вас в Запорожье в субботу, 26 мая 2018. Мы выбрали <span><strong>25</strong></span> порталов в выдающихся местах нашего города, чтобы вы могли исследовать его вместе.",
         "signup": "Регистрация / RSVP"
     },
 
@@ -35,7 +35,7 @@
         },
         "text": [
             "Mission Day собирает агентов обеих фракций, чтобы они могли вместе с Ingress изучать новые города по всему миру и испытать множество невероятных приключений.",
-            "Агенты, мы приглашаем вас в Запорожье в субботу, 26 мая 2018. Мы сделали всё, чтобы предложить вам 24 интересные миссии для изучения нашего города."
+            "Агенты, мы приглашаем вас в Запорожье в субботу, 26 мая 2018. Мы выбрали 25 порталов в выдающихся местах нашего города, чтобы вы могли изучить его вместе."
         ]
     },
 
@@ -48,27 +48,26 @@
         },
         "columns": [
             {
-                "when": "10:00 - 12:00",
+                "when": "09:45 - 10:15",
                 "what": {
-                    "leadText": "Регистрация",
+                    "leadText": "Групповое фото",
                     "subText": "Каскад фонтанов \"Радуга\"",
-                    "link": "https://www.google.com.ua/maps/place/Kaskad+Fontaniv+%22Raduha%22/@47.8356189,35.1147433,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc60cef5ff4d29:0x2e987ce8f98fc192!8m2!3d47.8356189!4d35.116932"
+                    "link": "https://goo.gl/maps/ohzSZsZtVb62"
                 }
             },
             {
-                "when": "11:00 - 11:15",
+                "when": "10:00 - 16:00",
                 "what": {
-                    "leadText": "Групповое фото",
-                    "subText": "Каскад фонтанів \"Радуга\"",
-                    "link": "https://www.google.com.ua/maps/place/Kaskad+Fontaniv+%22Raduha%22/@47.8356189,35.1147433,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc60cef5ff4d29:0x2e987ce8f98fc192!8m2!3d47.8356189!4d35.116932"
+                    "leadText": "Хак порталов",
+                    "subText": "Каждый посетивший нас агент, который хакнет как минимум 20 порталов из 25 предложенных, получит медаль Mission Day."
                 }
             },
             {
                 "when": "16:00 - 20:00",
                 "what": {
-                    "leadText": "Проверка сканеров",
-                    "subText": "Проверка пройденных миссий на площади Запорожской",
-                    "link": "https://www.google.com.ua/maps/place/Zaporizka+square,+Zaporizhia,+Zaporiz'ka+oblast/@47.8632474,35.0940659,19z/data=!4m13!1m7!3m6!1s0x40dc66c7c794bec5:0xb9525f3b94b474fc!2sZaporizka+Square,+Zaporizhzhia,+Zaporiz'ka+oblast!3b1!8m2!3d47.8633633!4d35.0939551!3m4!1s0x40dc66c7c783a38b:0x64264f72453c87ae!8m2!3d47.863439!4d35.0943486"
+                    "leadText": "Регистрация прохождения",
+                    "subText": "Регистрация агентов, прошедших Mission Day на Турпляже (Хортица)",
+                    "link": "https://goo.gl/maps/DkAW87PRrvk"
                 }
             }
         ],
@@ -90,16 +89,12 @@
                 "url": "https://instagram.com/missiondayzp"
             },
             {
-                "text": "Событие в Facebook",
-                "url": "https://www.facebook.com/events/166075047320559/"
+                "text": "Главный организатор: Resistance",
+                "url": "https://t.me/medbelka"
             },
             {
-                "text": "Группа в Google+",
-                "url": "https://plus.google.com/communities/111204827421100727782"
-            },
-            {
-                "text": "Группа ВК",
-                "url": "https://vk.com/missiondayzp"
+                "text": "Главный организатор: Enlightened",
+                "url": "https://t.me/kristobaljunta"
             }
         ]
     }

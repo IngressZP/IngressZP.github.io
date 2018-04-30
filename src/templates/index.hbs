@@ -262,12 +262,16 @@ https://www.google.com/maps/d/viewer?mid=11SksJmgINlqaGuzc1eLbRAGRHko
                                 </td>
                                 <td>
                                     <strong>{{what.leadText}}</strong><br>
-                                    {{what.subText}} <br>
-                                    <a class="locationLink"
-                                        href="{{what.link}}"
-                                        target="_blank" rel="noreferrer nofollow">
-                                        [{{../timetable.location}}]
-                                    </a>
+                                    {{#if what.subText}}
+                                        {{what.subText}} <br>
+                                    {{/if}}
+                                    {{#if what.link}}
+                                        <a class="locationLink"
+                                            href="{{what.link}}"
+                                            target="_blank" rel="noreferrer nofollow">
+                                            [{{../timetable.location}}]
+                                        </a>
+                                    {{/if}}
                                 </td>
                             </tr>
                         {{/each}}

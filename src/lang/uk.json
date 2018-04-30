@@ -24,7 +24,7 @@
 
     "banner": {
         "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
-        "text": "Агенти, ми запрошуємо вас відвідати Запоріжжя у суботу, 26 травня 2018. Ми обрали <span><strong>24</strong></span> цікаві місії, які дозволять вам досліджувати наше місто разом.",
+        "text": "Агенти, ми запрошуємо вас відвідати Запоріжжя у суботу, 26 травня 2018. Ми обрали <span><strong>25</strong></span> порталів у визначних точках нашого міста, щоб ви могли дослідити його разом.",
         "signup": "Реєстрація / RSVP"
     },
 
@@ -35,7 +35,7 @@
         },
         "text": [
             "Mission Day збирає агентів обох фракцій, щоб вони могли разом з Ingress пізнавати нові міста в усьому світі та пережити безліч унікальних пригод.",
-            "Агенти, ми запрошуємо вас відвідати Запоріжжя у суботу, 26 травня 2018 року. Ми зробили все, щоб запропонувати вам 24 цікаві місії для дослідження нашого міста."
+            "Агенти, ми запрошуємо вас відвідати Запоріжжя у суботу, 26 травня 2018 року. Ми зробили все, щоб запропонувати вам 25 порталів у визначних точках нашого міста для його дослідження."
         ]
     },
 
@@ -48,27 +48,26 @@
         },
         "columns": [
             {
-                "when": "10:00 - 12:00",
-                "what": {
-                    "leadText": "Реєстрація",
-                    "subText": "Каскад фонтанів \"Райдуга\"",
-                    "link": "https://www.google.com.ua/maps/place/Kaskad+Fontaniv+%22Raduha%22/@47.8356189,35.1147433,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc60cef5ff4d29:0x2e987ce8f98fc192!8m2!3d47.8356189!4d35.116932"
-                }
-            },
-            {
-                "when": "11:00 - 11:15",
+                "when": "09:45 - 10:15",
                 "what": {
                     "leadText": "Групове фото",
                     "subText": "Каскад фонтанів \"Райдуга\"",
-                    "link": "https://www.google.com.ua/maps/place/Kaskad+Fontaniv+%22Raduha%22/@47.8356189,35.1147433,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc60cef5ff4d29:0x2e987ce8f98fc192!8m2!3d47.8356189!4d35.116932"
+                    "link": "https://goo.gl/maps/ohzSZsZtVb62"
+                }
+            },
+            {
+                "when": "10:00 - 16:00",
+                "what": {
+                    "leadText": "Хак порталів",
+                    "subText": "Кожен гість, хто хакне як мінімум 20 порталів з 25 запропонованих, отримає медаль Mission Day."
                 }
             },
             {
                 "when": "16:00 - 20:00",
                 "what": {
-                    "leadText": "Перевірка сканерів",
-                    "subText": "Перевірка пройдених місій на площі Запорізькій",
-                    "link": "https://www.google.com.ua/maps/place/Zaporizka+square,+Zaporizhia,+Zaporiz'ka+oblast/@47.8632474,35.0940659,19z/data=!4m13!1m7!3m6!1s0x40dc66c7c794bec5:0xb9525f3b94b474fc!2sZaporizka+Square,+Zaporizhzhia,+Zaporiz'ka+oblast!3b1!8m2!3d47.8633633!4d35.0939551!3m4!1s0x40dc66c7c783a38b:0x64264f72453c87ae!8m2!3d47.863439!4d35.0943486"
+                    "leadText": "Реєстрація проходження",
+                    "subText": "Реєстрація агентів, що пройшли Mission Day на Турпляжі (Хортиця)",
+                    "link": "https://goo.gl/maps/DkAW87PRrvk"
                 }
             }
         ],
@@ -90,16 +89,12 @@
                 "url": "https://instagram.com/missiondayzp"
             },
             {
-                "text": "Спільнота в Facebook",
-                "url": "https://www.facebook.com/events/166075047320559/"
+                "text": "Головний організатор: Resistance",
+                "url": "https://t.me/medbelka"
             },
             {
-                "text": "Спільнота у Google+",
-                "url": "https://plus.google.com/communities/111204827421100727782"
-            },
-            {
-                "text": "Спільнота у VK",
-                "url": "https://vk.com/missiondayzp"
+                "text": "Головний організатор: Enlightened",
+                "url": "https://t.me/kristobaljunta"
             }
         ]
     }
