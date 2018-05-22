@@ -1,102 +1,96 @@
 {
-    "lang": {
+  "lang": {
+    "name": "Russian (Русский)",
+    "code": "ru",
+    "all": [
+      {
+        "name": "Ukrainian (Українська)",
+        "code": "uk"
+      },
+      {
         "name": "Russian (Русский)",
-        "code": "ru",
-        "all": [
-            {
-                "name": "Ukrainian (Українська)",
-                "code": "uk"
-            },
-            {
-                "name": "Russian (Русский)",
-                "code": "ru"
-            },
-            {
-                "name": "English (English)",
-                "code": "en"
-            }
-        ]
+        "code": "ru"
+      },
+      {
+        "name": "English (English)",
+        "code": "en"
+      }
+    ]
+  },
+  "menu": {
+  },
+  "banner": {
+    "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
+    "text": "Агенты, мы приглашаем вас в Запорожье в субботу, 26 мая 2018. Мы выбрали <span><strong>25</strong></span> порталов в выдающихся местах нашего города, чтобы вы могли исследовать его вместе.",
+    "signup": "Регистрация / RSVP",
+    "map": "Карта"
+  },
+  "intro": {
+    "header": {
+      "leadText": "Mission Day <span>Zaporizhzhia</span>",
+      "subText": "Добро пожаловать на сайт Mission Day Запорожье!"
     },
-
-    "menu": {
-
+    "text": [
+      "Mission Day собирает агентов обеих фракций, чтобы они могли вместе с Ingress изучать новые города по всему миру и испытать множество невероятных приключений.",
+      "Агенты, мы приглашаем вас в Запорожье в субботу, 26 мая 2018. Мы выбрали 25 порталов в выдающихся местах нашего города, чтобы вы могли изучить его вместе."
+    ]
+  },
+  "timetable": {
+    "header": "Расписание<span> MD: Запорожье</span>",
+    "subHeader": "Наше расписание еще не окончательное. Следите за обновлениями.",
+    "columnHeaders": {
+      "when": "Когда?",
+      "what": "Что?"
     },
-
-    "banner": {
-        "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
-        "text": "Агенты, мы приглашаем вас в Запорожье в субботу, 26 мая 2018. Мы выбрали <span><strong>25</strong></span> порталов в выдающихся местах нашего города, чтобы вы могли исследовать его вместе.",
-        "signup": "Регистрация / RSVP",
-        "map": "Карта"
-    },
-
-    "intro": {
-        "header": {
-            "leadText": "Mission Day <span>Zaporizhzhia</span>",
-            "subText": "Добро пожаловать на сайт Mission Day Запорожье!"
-        },
-        "text": [
-            "Mission Day собирает агентов обеих фракций, чтобы они могли вместе с Ingress изучать новые города по всему миру и испытать множество невероятных приключений.",
-            "Агенты, мы приглашаем вас в Запорожье в субботу, 26 мая 2018. Мы выбрали 25 порталов в выдающихся местах нашего города, чтобы вы могли изучить его вместе."
-        ]
-    },
-
-    "timetable": {
-        "header": "Расписание<span> MD: Запорожье</span>",
-        "subHeader": "Наше расписание еще не окончательное. Следите за обновлениями.",
-        "columnHeaders": {
-            "when": "Когда?",
-            "what": "Что?"
-        },
-        "columns": [
-            {
-                "when": "09:45 - 10:15",
-                "what": {
-                    "leadText": "Групповое фото",
-                    "subText": "Каскад фонтанов \"Радуга\"",
-                    "link": "https://goo.gl/maps/ohzSZsZtVb62"
-                }
-            },
-            {
-                "when": "10:00 - 16:00",
-                "what": {
-                    "leadText": "Хак порталов",
-                    "subText": "Каждый посетивший нас агент, который хакнет как минимум 20 порталов из 25 предложенных, получит медаль Mission Day."
-                }
-            },
-            {
-                "when": "16:00 - 20:00",
-                "what": {
-                    "leadText": "Регистрация прохождения",
-                    "subText": "Регистрация агентов, прошедших Mission Day на Турпляже (Хортица)",
-                    "link": "https://goo.gl/maps/DkAW87PRrvk"
-                }
-            }
-        ],
-        "location": "Карта"
-    },
-
-    "signup": {
-        "links": [
-            {
-                "text": "Официальный канал в Telegram",
-                "url": "https://t.me/missiondayzp"
-            },
-            {
-                "text": "Чат для вопросов в Telegram",
-                "url": "https://t.me/missiondayzpchat"
-            },
-            {
-                "text": "Instagram",
-                "url": "https://instagram.com/missiondayzp"
-            },
-            {
-                "text": "Главный организатор: Resistance",
-                "url": "https://t.me/medbelka"
-            },
-            {
-                "text": "Главный организатор: Enlightened",
-                "url": "https://t.me/kristobaljunta"
-            }
-        ]
-    }
+    "columns": [
+      {
+        "when": "09:45 - 10:15",
+        "what": {
+          "leadText": "Групповое фото",
+          "subText": "Каскад фонтанов \"Радуга\"",
+          "link": "https://goo.gl/maps/ohzSZsZtVb62"
+        }
+      },
+      {
+        "when": "10:00 - 16:00",
+        "what": {
+          "leadText": "Хак порталов",
+          "subText": "Каждый посетивший нас агент, который хакнет как минимум 20 порталов из 25 предложенных, получит медаль Mission Day."
+        }
+      },
+      {
+        "when": "16:00 - 20:00",
+        "what": {
+          "leadText": "Регистрация прохождения",
+          "subText": "Регистрация агентов, прошедших Mission Day на Турпляже (Хортица)",
+          "link": "https://goo.gl/maps/DkAW87PRrvk"
+        }
+      }
+    ],
+    "location": "Карта"
+  },
+  "signup": {
+    "links": [
+      {
+        "text": "Официальный канал в Telegram",
+        "url": "https://t.me/missiondayzp"
+      },
+      {
+        "text": "Чат для вопросов в Telegram",
+        "url": "https://t.me/missiondayzpchat"
+      },
+      {
+        "text": "Instagram",
+        "url": "https://instagram.com/missiondayzp"
+      },
+      {
+        "text": "Главный организатор: Resistance",
+        "url": "https://t.me/medbelka"
+      },
+      {
+        "text": "Главный организатор: Enlightened",
+        "url": "https://t.me/kristobaljunta"
+      }
+    ]
+  }
 }

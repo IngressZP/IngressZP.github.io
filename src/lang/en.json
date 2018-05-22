@@ -1,102 +1,96 @@
 {
-    "lang": {
+  "lang": {
+    "name": "English (English)",
+    "code": "en",
+    "all": [
+      {
+        "name": "Ukrainian (Українська)",
+        "code": "uk"
+      },
+      {
+        "name": "Russian (Русский)",
+        "code": "ru"
+      },
+      {
         "name": "English (English)",
-        "code": "en",
-        "all": [
-            {
-                "name": "Ukrainian (Українська)",
-                "code": "uk"
-            },
-            {
-                "name": "Russian (Русский)",
-                "code": "ru"
-            },
-            {
-                "name": "English (English)",
-                "code": "en"
-            }
-        ]
+        "code": "en"
+      }
+    ]
+  },
+  "menu": {
+  },
+  "banner": {
+    "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
+    "text": "Agents, we want to discover Zaporizhzhia on Saturday 26 May 2018. In collaboration with the City of Zaporizhzhia we will provide you <strong><span> 25 well chosen </span></strong>portals to explore the city on foot together.",
+    "signup": "Niantic Signup / RSVP",
+    "map": "Map"
+  },
+  "intro": {
+    "header": {
+      "leadText": "Mission Day <span>Zaporizhzhia</span>",
+      "subText": "Welcome to our Community Website <br>for the Mission Day Zaporizhzhia!"
     },
-
-    "menu": {
-
+    "text": [
+      "Mission Day brings together Agents from both factions to explore cities around the world through the lens of Ingress with unique and local adventures on foot.",
+      "Agents, we want to discover Zaporizhzhia on Saturday 26 May 2018. In collaboration with the City of Zaporizhzhia we will provide you 25 well chosen portals to explore the city on foot together."
+    ]
+  },
+  "timetable": {
+    "header": "Timetable<span> MD: Zaporizhzhia</span>",
+    "subHeader": "Our Timetable is not final yet. We will keep you updated!",
+    "columnHeaders": {
+      "when": "When?",
+      "what": "What?"
     },
-
-    "banner": {
-        "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
-        "text": "Agents, we want to discover Zaporizhzhia on Saturday 26 May 2018. In collaboration with the City of Zaporizhzhia we will provide you <strong><span> 25 well chosen </span></strong>portals to explore the city on foot together.",
-        "signup": "Niantic Signup / RSVP",
-        "map": "Map"
-    },
-
-    "intro": {
-        "header": {
-            "leadText": "Mission Day <span>Zaporizhzhia</span>",
-            "subText": "Welcome to our Community Website <br>for the Mission Day Zaporizhzhia!"
-        },
-        "text": [
-            "Mission Day brings together Agents from both factions to explore cities around the world through the lens of Ingress with unique and local adventures on foot.",
-            "Agents, we want to discover Zaporizhzhia on Saturday 26 May 2018. In collaboration with the City of Zaporizhzhia we will provide you 25 well chosen portals to explore the city on foot together."
-        ]
-    },
-
-    "timetable": {
-        "header": "Timetable<span> MD: Zaporizhzhia</span>",
-        "subHeader": "Our Timetable is not final yet. We will keep you updated!",
-        "columnHeaders": {
-            "when": "When?",
-            "what": "What?"
-        },
-        "columns": [
-            {
-                "when": "09:45 - 10:15",
-                "what": {
-                    "leadText": "Group photo",
-                    "subText": "Kaskad Fontaniv \"Raduha\"",
-                    "link": "https://goo.gl/maps/ohzSZsZtVb62"
-                }
-            },
-            {
-                "when": "10:00 - 16:00",
-                "what": {
-                    "leadText": " Qualify for Mission Day Medal",
-                    "subText": "Every agent who visits and hacks at least 20 of the 25 challenge portals will receive a Mission Day medal."
-                }
-            },
-            {
-                "when": "16:00 - 20:00",
-                "what": {
-                    "leadText": "Mission Day Check-In",
-                    "subText": "@Turplyazh, Khortytsia",
-                    "link": "https://goo.gl/maps/DkAW87PRrvk"
-                }
-            }
-        ],
-        "location": "Location"
-    },
-
-    "signup": {
-        "links": [
-            {
-                "text": "Official Telegram channel",
-                "url": "https://t.me/missiondayzp"
-            },
-            {
-                "text": "Telegram Q&A chat",
-                "url": "https://t.me/missiondayzpchat"
-            },
-            {
-                "text": "Instagram",
-                "url": "https://instagram.com/missiondayzp"
-            },
-            {
-                "text": "Person of contact: Resistance",
-                "url": "https://t.me/medbelka"
-            },
-            {
-                "text": "Person of contact: Enlightened",
-                "url": "https://t.me/kristobaljunta"
-            }
-        ]
-    }
+    "columns": [
+      {
+        "when": "09:45 - 10:15",
+        "what": {
+          "leadText": "Group photo",
+          "subText": "Kaskad Fontaniv \"Raduha\"",
+          "link": "https://goo.gl/maps/ohzSZsZtVb62"
+        }
+      },
+      {
+        "when": "10:00 - 16:00",
+        "what": {
+          "leadText": " Qualify for Mission Day Medal",
+          "subText": "Every agent who visits and hacks at least 20 of the 25 challenge portals will receive a Mission Day medal."
+        }
+      },
+      {
+        "when": "16:00 - 20:00",
+        "what": {
+          "leadText": "Mission Day Check-In",
+          "subText": "@Turplyazh, Khortytsia",
+          "link": "https://goo.gl/maps/DkAW87PRrvk"
+        }
+      }
+    ],
+    "location": "Location"
+  },
+  "signup": {
+    "links": [
+      {
+        "text": "Official Telegram channel",
+        "url": "https://t.me/missiondayzp"
+      },
+      {
+        "text": "Telegram Q&A chat",
+        "url": "https://t.me/missiondayzpchat"
+      },
+      {
+        "text": "Instagram",
+        "url": "https://instagram.com/missiondayzp"
+      },
+      {
+        "text": "Person of contact: Resistance",
+        "url": "https://t.me/medbelka"
+      },
+      {
+        "text": "Person of contact: Enlightened",
+        "url": "https://t.me/kristobaljunta"
+      }
+    ]
+  }
 }
