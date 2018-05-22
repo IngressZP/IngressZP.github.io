@@ -48,15 +48,10 @@
                             {{{banner.text}}}
                         </p>
                         <div class="banner-buttons">
-                            {{!!--
-                            <!-- timetable and signup only mobile visible -->
-                            <a href="#missions" class="button-default button-md">Our Missions</a>
-                            <a href="#timetable" class="button-default button-md visibile-xs">TimeTable</a>
-                            --}}
-
                             <a href="http://events.ingress.com/MissionDay/Zaporizhzhia"
                                 target="_blank" rel="noopener noreferrer"
-                                class="button-default button-md niantic visibile-xs">{{{banner.signup}}}</a>
+                                class="button-default button-md niantic">{{{banner.signup}}}</a>
+                            <a href="#map" class="button-default button-md niantic">{{ banner.map }}</a>
                         </div>
                     </div>
                 </div>
@@ -127,106 +122,9 @@ https://www.google.com/maps/d/viewer?mid=11SksJmgINlqaGuzc1eLbRAGRHko
 </section>
 {{!-- // Introduction --}}
 
-{{!--
-<!-- DYNAMIC MISSIONDAY MAP - will be populated with an javascript -->
-<section id="map" class="hidden-xs">
-    <div class="map"></div>
+<section id="map">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=164LI5v1jRsqkyz2WU7uLwGIPHMXTjK5-"></iframe>
 </section>
---}}
-
-{{!--
-<!-- // map -->
-<section id="missions">
-    <div class="container clearfix">
-        <img src="assets/img/md-blank.svg" class="mdlogo">
-        <!-- col mission badge images -->
-        <div class="row">
-        <div class="col-sm-6 col-md-5" style="text-align:center">
-            <!--
-             Berlin had 24 Missions - this is also niantics limit for missiondays atm.
-
-             Mission Badge Hover Script:
-                - each mission needs its own ID (see: id='mID-XX')
-                - these ID's need to matches the class at row: 242  <ul class="mission-names"
-                - on mission-badge hover -> highlight matching Missioname
-                - super simple....
-
-                PSD FOR BADGES CAN BE FOUND ON GITHUB
-
-                todo: add psd to github...
-             -->
-            <img id="mID-01" class="mission-badge" src="assets/mission-badge/01.png" alt="Name of Mission" />
-            <img id="mID-02" class="mission-badge" src="assets/mission-badge/02.png" alt="Name of Mission" />
-            <img id="mID-03" class="mission-badge" src="assets/mission-badge/03.png" alt="Name of Mission" />
-            <img id="mID-04" class="mission-badge" src="assets/mission-badge/04.png" alt="Name of Mission" />
-            <img id="mID-05" class="mission-badge" src="assets/mission-badge/05.png" alt="Name of Mission" />
-            <img id="mID-06" class="mission-badge" src="assets/mission-badge/06.png" alt="Name of Mission" />
-            <img id="mID-07" class="mission-badge" src="assets/mission-badge/07.png" alt="Name of Mission" />
-            <img id="mID-08" class="mission-badge" src="assets/mission-badge/08.png" alt="Name of Mission" />
-            <img id="mID-09" class="mission-badge" src="assets/mission-badge/09.png" alt="Name of Mission" />
-            <img id="mID-10" class="mission-badge" src="assets/mission-badge/10.png" alt="Name of Mission" />
-            <img id="mID-11" class="mission-badge" src="assets/mission-badge/11.png" alt="Name of Mission" />
-            <img id="mID-12" class="mission-badge" src="assets/mission-badge/12.png" alt="Name of Mission" />
-            <img id="mID-13" class="mission-badge" src="assets/mission-badge/13.png" alt="Name of Mission" />
-            <img id="mID-14" class="mission-badge" src="assets/mission-badge/14.png" alt="Name of Mission" />
-            <img id="mID-15" class="mission-badge" src="assets/mission-badge/15.png" alt="Name of Mission" />
-            <img id="mID-16" class="mission-badge" src="assets/mission-badge/16.png" alt="Name of Mission" />
-            <img id="mID-17" class="mission-badge" src="assets/mission-badge/17.png" alt="Name of Mission" />
-            <img id="mID-18" class="mission-badge" src="assets/mission-badge/18.png" alt="Name of Mission" />
-            <img id="mID-19" class="mission-badge" src="assets/mission-badge/19.png" alt="Name of Mission" />
-            <img id="mID-20" class="mission-badge" src="assets/mission-badge/20.png" alt="Name of Mission" />
-            <img id="mID-21" class="mission-badge" src="assets/mission-badge/21.png" alt="Name of Mission" />
-            <img id="mID-22" class="mission-badge" src="assets/mission-badge/22.png" alt="Name of Mission" />
-            <img id="mID-23" class="mission-badge" src="assets/mission-badge/23.png" alt="Name of Mission" />
-            <img id="mID-24" class="mission-badge" src="assets/mission-badge/24.png" alt="Name of Mission" />
-
-            <!-- add Link to your Google Map here - WE LOVE GOOD UX  -->
-            <a class="wow bounceInUp button-default button-md" style="margin:1em auto 2em auto" data-wow-duration="2s"  href="map">Open Mobile Map</a>
-            <!-- // MAP -->
-            <br>
-        </div>
-        <!-- end col mission badge images -->
-
-        <!-- col for mission name list -->
-        <div class="col-sm-6 col-md-7">
-            <!-- yeah we like to brag.... -->
-            <div class="section-title no-mb"> <h1>CREATED BY REAL <span>AGENTS</span></h1> </div>
-                <p>
-                    24 <span class="highlight">Missions</span> across Zaporizhzhia are waiting to be discovered. <br>
-                    All Missions are created and tested by local Agents to ensure a great Mission Day experience. Also, they will be barrier free and playable for handicapped Agents.
-                </p>
-            <!-- MISSION NAME LIST  -->
-             <ul class="mission-names" id="mName">
-                <!-- MISSION SHOULD BE THE EXCACT NAME AS IT APPEARS IN THE SCANNER!! -->
-                <li class="mID-01">Mission Name 01</li>
-                <li class="mID-02">Mission Name 02</li>
-                <li class="mID-03">Mission Name 03</li>
-                <li class="mID-04">Mission Name 04</li>
-                <li class="mID-05">Mission Name 05</li>
-                <li class="mID-06">Mission Name 06</li>
-                <li class="mID-07">Mission Name 07</li>
-                <li class="mID-08">Mission Name 08</li>
-                <li class="mID-09">Mission Name 09</li>
-                <li class="mID-10">Mission Name 10</li>
-                <li class="mID-11">Mission Name 11</li>
-                <li class="mID-12">Mission Name 12</li>
-                <li class="mID-13">Mission Name 13</li>
-                <li class="mID-14">Mission Name 14</li>
-                <li class="mID-15">Mission Name 15</li>
-                <li class="mID-16">Mission Name 16</li>
-                <li class="mID-17">Mission Name 17</li>
-                <li class="mID-18">Mission Name 18</li>
-                <li class="mID-19">Mission Name 19</li>
-                <li class="mID-20">Mission Name 20</li>
-                <li class="mID-21">Mission Name 21</li>
-                <li class="mID-22">Mission Name 22</li>
-                <li class="mID-23">Mission Name 23</li>
-             </ul>
-        </div>
-        </div>
-    </div>
-</section>
---}}
 
 {{!-- TIME TABLE --}}
 <section id="timetable">

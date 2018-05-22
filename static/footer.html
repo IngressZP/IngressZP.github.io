@@ -1,63 +1,10 @@
 <!-- js -->
-<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- missionday template stuff -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script src="/static/js/main.min.js"></script>
-<!--
-        google maps api - ADD YOUR API KEY HERE
-        doc: https://developers.google.com/maps/documentation/javascript/get-api-key?hl=de
-
-        NOTE: you need to white list every domain that you are gonna use also localhost if you working localy
--->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbaSekki3-X1lIpjUAxGVwKOkCjGI5560" type="text/javascript"></script>
-<script>
-    function initialize() {
-        //add map, the type of map
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 14,
-            // YOU NEED TO CHANGE THAT TO YOUR CITY
-            center: new google.maps.LatLng(52.520007, 13.404954),
-            scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
-            styles: [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]
-        });
-
-
-        //add locations
-        // We used a CMS SYSTEM TO DO THIS .... Maybe i will write php script for it....
-        // Just copy the rows and edit the Name and LAT / LONG and ICON
-        // This will be rendered on the map
-
-        var locations = [
-            ['<h5 stlye="margin-bottom:5px; font-weight:bold">NAME OF MISSION 01</h5>', 52.5050224, 13.4375013, 'assets/mission-badge/01.png'], // each entry has a , at the end
-            ['<h5 stlye="margin-bottom:5px; font-weight:bold">NAME OF MISSION 02</h5>', 52.5050224, 13.4375013, 'assets/mission-badge/02.png'], // each entry has a , at the end
-            ['<h5 stlye="margin-bottom:5px; font-weight:bold">NAME OF MSIION 03</h5>', 52.5050224, 13.4375013, 'assets/mission-badge/03.png'] // last row has !NO! ,
-        ];
-        //declare marker call it 'i'
-        var marker, i;
-
-        //declare infowindow
-        var infowindow = new google.maps.InfoWindow();
-
-        //add marker to each locations
-        for (i = 0; i < locations.length; i++) {
-
-            marker = new google.maps.Marker({
-                animation: google.maps.Animation.DROP,
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                map: map,
-                icon: locations[i][3]
-            });
-
-            //click function to marker, pops up infowindow
-            google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                return function() {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
-        }
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 </body>
 </html>

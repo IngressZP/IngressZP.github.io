@@ -66,15 +66,19 @@ ul {
 	padding: 0;
 }
 
-section#map {
+#map {
 	height: 580px;
 	margin: 95px 0;
-	border: 15px solid #eee;
-	border-left: none;
-	border-right: 0;
 }
 
-section#timetable {
+#map iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+}
+
+#timetable {
 	margin-top: 8rem;
 }
 

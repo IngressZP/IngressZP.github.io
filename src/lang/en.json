@@ -25,7 +25,8 @@
     "banner": {
         "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
         "text": "Agents, we want to discover Zaporizhzhia on Saturday 26 May 2018. In collaboration with the City of Zaporizhzhia we will provide you <strong><span> 25 well chosen </span></strong>portals to explore the city on foot together.",
-        "signup": "Niantic Signup / RSVP"
+        "signup": "Niantic Signup / RSVP",
+        "map": "Map"
     },
 
     "intro": {

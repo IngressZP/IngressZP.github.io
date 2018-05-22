@@ -25,7 +25,8 @@
     "banner": {
         "header": "INGRESS<br><span>MISSION DAY </span>Zaporizhzhia",
         "text": "Агенти, ми запрошуємо вас відвідати Запоріжжя у суботу, 26 травня 2018. Ми обрали <span><strong>25</strong></span> порталів у визначних точках нашого міста, щоб ви могли дослідити його разом.",
-        "signup": "Реєстрація / RSVP"
+        "signup": "Реєстрація / RSVP",
+        "map": "Карта"
     },
 
     "intro": {
