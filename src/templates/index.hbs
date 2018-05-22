@@ -1,165 +1,169 @@
 <header class="header-blue">
-    <div id="main-menu" class="sticker" style="opacity: 1;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-2 col-sm-3">
-                    <div class="logo">
-                        <a href="/"><img src="assets/img/md-logo.png" class="mdlogo" alt="Missionday"></a>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-10">
-                    <div class="dropdown lang-dropdown pull-right">
-                        <button class="btn btn-default button-blue dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <span>{{lang.name}}</span> <i class="glyphicon glyphicon-globe"></i>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            {{#each lang.all}}
-                                <li><a href="#" data-lang="{{code}}">{{name}}</a></li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <div id="main-menu" class="sticker" style="opacity: 1;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-2 col-sm-3">
+          <div class="logo">
+            <a href="/"><img src="assets/img/md-logo.png" class="mdlogo" alt="Missionday"></a>
+          </div>
         </div>
+        <div class="col-lg-8 col-md-10">
+          <div class="dropdown lang-dropdown pull-right">
+            <button class="btn btn-default button-blue dropdown-toggle" type="button" id="dropdownMenu1"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span>{{lang.name}}</span> <i class="glyphicon glyphicon-globe"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each lang.all}}
+                <li><a href="#" data-lang="{{code}}">{{name}}</a></li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </header>
 <div class="banner-area banner-skyline banner-horizontal" id="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-lg-7">
-                <div class="banner-text">
-                    <div class="banner-table-cell">
-                        <h1>
-                            {{{banner.header}}}
-                        </h1>
-                        <p>
-                            {{{banner.text}}}
-                        </p>
-                        <div class="banner-buttons">
-                            <a href="http://events.ingress.com/MissionDay/Zaporizhzhia"
-                                target="_blank" rel="noopener noreferrer"
-                                class="button-default button-md niantic">{{{banner.signup}}}</a>
-                            <a href="#map" class="button-default button-md niantic">{{ banner.map }}</a>
-                        </div>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-lg-7">
+        <div class="banner-text">
+          <div class="banner-table-cell">
+            <h1>
+              {{{banner.header}}}
+            </h1>
+            <p>
+              {{{banner.text}}}
+            </p>
+            <div class="banner-buttons">
+              <a href="http://events.ingress.com/MissionDay/Zaporizhzhia"
+                 target="_blank" rel="noopener noreferrer"
+                 class="button-default button-md niantic">{{{banner.signup}}}</a>
+              <a href="#map" class="button-default button-md niantic">{{ banner.map }}</a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 {{!-- Introduction --}}
 <section id="intro">
-<div class="container">
+  <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div class="section-title text-center title-blue">
-                <h1>
-                    {{{intro.header.leadText}}}
-                </h1>
-                <p>
-                    {{{intro.header.subText}}}
-                </p>
-                <hr>
-            </div>
+      <div class="col-md-12">
+        <div class="section-title text-center title-blue">
+          <h1>
+            {{{intro.header.leadText}}}
+          </h1>
+          <p>
+            {{{intro.header.subText}}}
+          </p>
+          <hr>
         </div>
+      </div>
     </div>
     <div class="row">
-        <div class="col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-sm-5">
-			<div class="about-image">
-				<img  src="assets/img/promo-city.jpg" alt="Missionday Zaporizhzhia">
-			</div>
+      <div class="col-lg-offset-1 col-md-offset-0 col-sm-offset-0 col-sm-5">
+        <div class="about-image">
+          <img src="assets/img/promo-city.jpg" alt="Missionday Zaporizhzhia">
         </div>
-        <div class="col-xs-12 col-sm-7 col-lg-6">
-            {{#each intro.text}}
-                <p>
-                    {{this}}
-                </p>
-            {{/each}}
-        </div>
+      </div>
+      <div class="col-xs-12 col-sm-7 col-lg-6">
+        {{#each intro.text}}
+          <p>
+            {{this}}
+          </p>
+        {{/each}}
+      </div>
     </div>
-</div>
+  </div>
 </section>
 {{!-- // Introduction --}}
 
 <section id="map">
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=164LI5v1jRsqkyz2WU7uLwGIPHMXTjK5-"></iframe>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=164LI5v1jRsqkyz2WU7uLwGIPHMXTjK5-"></iframe>
 </section>
 
 {{!-- TIME TABLE --}}
 <section id="timetable">
-    <div class="container clearfix">
-        <div class="row">
-            <div class="col-md-9 col-md-offset-2">
-                <div class="section-title text-center title-blue">
-                    <h1>
-                        {{{timetable.header}}}
-                    </h1>
-                    <p class="big text-center">
-                        {{timetable.subHeader}}
-                    </p>
-                </div>
-            </div>
+  <div class="container clearfix">
+    <div class="row">
+      <div class="col-md-9 col-md-offset-2">
+        <div class="section-title text-center title-blue">
+          <h1>
+            {{{timetable.header}}}
+          </h1>
+          <p class="big text-center">
+            {{timetable.subHeader}}
+          </p>
         </div>
-        <div class="row">
-            <div class="col-md-9 col-md-offset-2">
-                <table class="table timetable text-center">
-                    <thead class="text-center">
-                        <th>
-                            {{timetable.columnHeaders.when}}
-                        </th>
-                        <th>
-                            {{timetable.columnHeaders.what}}
-                        </th>
-                    </thead>
-                    <tbody>
-                        {{#each timetable.columns}}
-                            <tr>
-                                <td>
-                                    {{when}}
-                                </td>
-                                <td>
-                                    <strong>{{what.leadText}}</strong><br>
-                                    {{#if what.subText}}
-                                        {{what.subText}} <br>
-                                    {{/if}}
-                                    {{#if what.link}}
-                                        <a class="locationLink"
-                                            href="{{what.link}}"
-                                            target="_blank" rel="noreferrer nofollow">
-                                            [{{../timetable.location}}]
-                                        </a>
-                                    {{/if}}
-                                </td>
-                            </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-md-9 col-md-offset-2">
+        <table class="table timetable text-center">
+          <thead class="text-center">
+          <th>
+            {{timetable.columnHeaders.when}}
+          </th>
+          <th>
+            {{timetable.columnHeaders.what}}
+          </th>
+          </thead>
+          <tbody>
+          {{#each timetable.columns}}
+            <tr>
+              <td>
+                {{when}}
+              </td>
+              <td>
+                <strong>{{what.leadText}}</strong><br>
+                {{#if what.subText}}
+                  {{what.subText}} <br>
+                {{/if}}
+                {{#if what.link}}
+                  <a class="locationLink"
+                     href="{{what.link}}"
+                     target="_blank" rel="noreferrer nofollow">
+                    [{{../timetable.location}}]
+                  </a>
+                {{/if}}
+              </td>
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="signup">
-       <div class="container clearfix">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="signup-box wow fadeInUp">
-                        <img src="assets/img/md-blank.svg" class="mdlogo">
+  <div class="container clearfix">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="signup-box wow fadeInUp">
+          <img src="assets/img/md-blank.svg" class="mdlogo">
 
-                        {{#each signup.links}}
-                            <a href="{{url}}"
-                                target="_blank" rel="noreferrer nofollow"
-                                class="btn2">
-                                {{text}}
-                            </a>
-                        {{/each}}
-                    </div>
-                </div>
-            </div>
-       </div>
+          {{#each signup.links}}
+            <a href="{{url}}"
+               target="_blank" rel="noreferrer nofollow"
+               class="btn2">
+              {{text}}
+            </a>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer >
-    <small>copyright 2018 by missionday.zp.ua | a Zaporizhzhia ingress cross faction project | this is not the official niantic page | created with the help of garytube's <a href="https://github.com/garytube/missionday" target="_blank" rel="noreferrer nofollow">Berlin Mission Day template</a></small>
+<footer>
+  <small>copyright 2018 by missionday.zp.ua | a Zaporizhzhia ingress cross faction project | this is not the official
+    niantic page | created with the help of garytube's <a href="https://github.com/garytube/missionday" target="_blank"
+                                                          rel="noreferrer nofollow">Berlin Mission Day template</a>
+  </small>
 </footer>
